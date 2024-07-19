@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/costum"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tictac" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@drawable/costum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.235">
+
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F30505"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F30505"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:cornerRadius="5dp"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F30505"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F30505"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:onClick="check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F30505"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="5dp" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
